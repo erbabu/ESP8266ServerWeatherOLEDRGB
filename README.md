@@ -31,5 +31,7 @@ Suggestions:
 * RGB LED (Common Anode) values can be changed either in the provided text boxes and click button with text TestRGB (or) pick a color from the color canvas.
   Note: If you have Common Cathode RGB LED, you might have to change code - one such reference: https://create.arduino.cc/projecthub/techmirtz/using-common-cathode-and-common-anode-rgb-led-with-arduino-7f3aa9
 
+![ESP8266 OLED RGB Hardware Setup](https://github.com/erbabu/ESP8266ServerWeatherOLEDRGB/blob/master/Setup-ESP8266OLEDRGB.jpg)
+
  BLOG
  https://erbabu.wordpress.com/2019/02/13/compare-arduino-raspberry-pi/
