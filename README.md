@@ -2,12 +2,18 @@
 This project uses ESP8266 WiFi Module to control RGB LED via WiFi Network.
 We will also read weather forecast for a city and display those details in OLED display.
 
-Hardware   
+**Following are the goals of this project**
+1. Program ESP8266 using Arduino IDE
+2. Understand programming Common Anode RGB LED using 3 GPIO pins
+3. Read weather data for my city using OpenWeather API (HTTP client) and display current datetime, current weather and 3 day forecast in OLED display (SSD1306)
+4. Run HTTP web server in ESP8266, control RGB LED using the web page running in ESP8266 via desktop browser / mobile phone browser
+
+**Hardware**
 1.ESP8266 WiFi Module ( ESP12E - NodeMCU LoLin v3 )   
 2.RGB Common Anode LED   
 3.OLED Display (SSD1306)
 
-Wiring Diagram  
+**Wiring Diagram**
 ESP8266 Pin GPIO_14 to LED R //D5
 ESP8266 Pin GPIO_12 to LED G //D6
 ESP8266 Pin GPIO_13 to LED B //D7
@@ -18,13 +24,14 @@ ESP8266 Pin Gnd to OLED Gnd
 ESP8266 Pin GPIO_0 to OLED SDA //D3
 ESP8266 Pin GPIO_2 to OLED SCL //D4
 
-Libraries, Inspirations and Sample code from:
+*Libraries, Inspirations and Sample code from:*
+https://www.xtronical.com/basics/systems/esp8266mcu-et-al/setting-nodemcu-v3-esp-12e-esp8266-arduino-ide/
 https://github.com/ThingPulse/esp8266-weather-station
 http://microcontrollerkits.blogspot.com/2016/05/esp8266-wifi-control-rgbled.html
 
-ToDo: Update SSID, Password, OpenweatherAPIKey, OpenweatherCityCode
+**Variables:** SSID, Password, OpenweatherAPIKey, OpenweatherCityCode
 
-Suggestions:
+**Suggestions:**
 * Keep serial monitor window open with correct baud rate before uploading the sketch to esp8266
 * Selected city datetime, Current Weather and 3 day forecast displays in OLED display
 * Find out the web server ip address in serial monitor window. Browse to that IP address from a web browser (desktop / mobile).
@@ -33,5 +40,5 @@ Suggestions:
 
 ![ESP8266 OLED RGB Hardware Setup](https://github.com/erbabu/ESP8266ServerWeatherOLEDRGB/blob/master/Setup-ESP8266OLEDRGB.jpg)
 
- BLOG
+ **BLOG**
  https://erbabu.wordpress.com/2019/02/13/compare-arduino-raspberry-pi/
